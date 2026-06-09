@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://mbti-us-personality.pages.dev/sitemap.xml
-
+Sitemap: https://mbti-us-personality.pages.dev/en/sitemap.xml
