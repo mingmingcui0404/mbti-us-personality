@@ -44,7 +44,7 @@ function initTypeGrid() {
   const grid = document.querySelector("[data-type-grid]");
   if (!grid) return;
   grid.innerHTML = Object.entries(MBTI_TYPES).map(([code, [role, summary]]) => `
-    <a class="type-card" href="/en/results/${code.toLowerCase()}.html">
+    <a class="type-card" href="/en/results/${code.toLowerCase()}">
       <div class="type-code">${code}</div>
       <div class="type-role">${role}</div>
       <p>${summary}</p>
@@ -75,7 +75,7 @@ function initQuiz() {
     result.innerHTML = `
       <h3>Your likely type: ${code}, ${role}</h3>
       <p>${summary}</p>
-      <a href="/en/results/${code.toLowerCase()}.html">Read the full ${code} result page</a>
+      <a href="/en/results/${code.toLowerCase()}">Read the full ${code} result page</a>
     `;
     window.dispatchEvent(new CustomEvent("mbti:quiz-complete", { detail: { type: code } }));
   });
